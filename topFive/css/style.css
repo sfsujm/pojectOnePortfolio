@@ -34,6 +34,60 @@ h2 {
   border-color: crimson;
 }
 
+.cities .city-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.cities .city-list li {
+  margin: 10px;
+  text-align: center;
+  font-size: 17px;
+  width: 180px;
+}
+
+.cities img {
+  max-width: 180%;
+  height: auto; 
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(144, 0, 0)) 1;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+.food img{
+  border: 1px solid darkorange;
+  box-shadow: 0 0 15px rgb(255, 145, 0);
+}
+
+.game-recs img {
+  padding: 20px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(242, 242, 223), yellow) 1;
+  box-shadow: 0 0 15px rgb(255, 230, 0);
+  max-width: 150px;
+  margin: 10px; 
+}
+
+.game-recs .game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.game-recs figure {
+  margin: 50px;
+  text-align: center;
+  font-size: 15px;
+  width: 200px; 
+}
+
+.game-recs img {
+  max-width: 75%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
 }
