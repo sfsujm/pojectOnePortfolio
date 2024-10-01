@@ -1,91 +1,152 @@
 body {
-    background-color: #111;
-    color: #ffffff;
-    font-family: "Krona One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 15px;
-  }
-
-  .krona-one-regular {
-    font-family: "Krona One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-h1{
-      border-style: groove;
-      border-width: 5px;
-      border-color: crimson;
-      padding: 5px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  background-color: #111;
+  color: #ffffff;
+  font-family: "Krona One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 15px;
 }
 
-h1{
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-around; 
+  border-bottom: 2px solid #4d4949;
+  padding: 10px 20px; 
+  margin: 10px; 
+}
+
+h1 {
   padding: 20px;
   border: 4px solid transparent;
   border-image: linear-gradient(to right, crimson, orange) 1;
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+  text-align: center;
 }
 
 h2 {
   border-bottom: groove;
-  border-width: 5px;
+  border-width: 3px;
   border-color: crimson;
-}
-
-.cities .city-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-  padding: 20px;
-}
-
-.cities .city-list li {
-  margin: 10px;
   text-align: center;
-  font-size: 17px;
-  width: 180px;
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 30px; 
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.cities li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 220px; 
+  text-align: center;
+  margin: 0 10px; 
 }
 
 .cities img {
-  max-width: 180%;
-  height: auto; 
+  width: 220px;  
+  height: 150px; 
+  object-fit: cover; 
   border: 2px solid transparent;
   border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(144, 0, 0)) 1;
   box-shadow: 0 0 15px rgb(255, 255, 255);
+  margin-bottom: 10px; 
 }
 
-.food img{
+.cities li a {
+  font-size: 12px; 
+  font-weight: bold; 
+  color: darkorange; 
+  text-decoration: none; 
+}
+
+.cities li a:hover {
+  text-decoration: underline; 
+}
+
+.food {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px; 
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.food li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 200px; 
+  text-align: center;
+}
+
+.food img {
+  width: 200px; 
+  height: 150px; 
+  object-fit: cover; 
   border: 1px solid darkorange;
   box-shadow: 0 0 15px rgb(255, 145, 0);
 }
 
-.game-recs img {
-  padding: 20px;
+.food li a {
+  font-size: 12px; 
+  font-weight: bold; 
+  color: darkorange; 
+  text-decoration: none; 
+}
+
+.food li a:hover {
+  text-decoration: underline; 
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  gap: 20px; 
+}
+
+.games figure {
+  text-align: center;
+  flex: 1; 
+  max-width: 200px; 
+}
+
+.games img {
+  width: 150px; 
+  height: 200px; 
+  object-fit: cover; 
+  padding: 0;
   border: 2px solid transparent;
   border-image: linear-gradient(to right, rgb(242, 242, 223), yellow) 1;
   box-shadow: 0 0 15px rgb(255, 230, 0);
-  max-width: 150px;
   margin: 10px; 
 }
 
-.game-recs .game-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+a:link {
+  color: lightblue;
 }
 
-.game-recs figure {
-  margin: 50px;
-  text-align: center;
-  font-size: 15px;
-  width: 200px; 
+a:visited {
+  color: lightblue;
 }
 
-.game-recs img {
-  max-width: 75%;
-  height: auto;
+a:hover {
+  color: lightcoral;
 }
 
 a {

@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-.container {
+.boxes {
   max-width: 1200px;
   margin: auto;
   display: grid;
@@ -93,11 +93,23 @@ footer {
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 8px;
+  font-size: 12px;
 }
 
 img{
   border-radius: 15px;
+}
+
+a:link {
+  color: lightblue;
+}
+
+a:visited {
+  color: lightblue;
+}
+
+a:hover {
+  color: lightcoral;
 }
 
 a {
